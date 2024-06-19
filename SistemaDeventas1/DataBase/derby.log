@@ -1,0 +1,31 @@
+Tue Jun 18 22:24:13 COT 2024 : Servidor de red Apache Derby: Se ha iniciado 10.10.2.0 - (1582446) y está listo para aceptar las conexiones en el puerto 1527
+----------------------------------------------------------------
+Tue Jun 18 22:24:14 COT 2024:
+ Iniciando instancia a816c00e-0190-2e86-06f7-000029329a06 de Derby, versión The Apache Software Foundation - Apache Derby - 10.10.2.0 - (1582446): 
+en el directorio de base de datos D:\UNIVERSIDAD\APLICACIONES DISTRIBUIDAS\P1\SistemaDeventasCompleto\SistemaDeventas1\DataBase\Ventas con el cargador de clases sun.misc.Launcher$AppClassLoader@266474c2
+Cargado desde file:/C:/Program%20Files/glassfish-4.1/javadb/lib/derby.jar
+java.vendor=Oracle Corporation
+java.runtime.version=1.8.0_411-b09
+user.dir=C:\Program Files\glassfish-4.1\javadb
+os.name=Windows 11
+os.arch=amd64
+os.version=10.0
+derby.system.home=D:\UNIVERSIDAD\APLICACIONES DISTRIBUIDAS\P1\SistemaDeventasCompleto\SistemaDeventas1\DataBase
+Cargador de clases de base de datos iniciado - derby.database.classpath=''
+----------------------------------------------------------------
+Tue Jun 18 22:24:14 COT 2024:
+Cerrando la instancia a816c00e-0190-2e86-06f7-000029329a06 en el directorio de base de datos D:\UNIVERSIDAD\APLICACIONES DISTRIBUIDAS\P1\SistemaDeventasCompleto\SistemaDeventas1\DataBase\Ventas con cargador de clases sun.misc.Launcher$AppClassLoader@266474c2
+Tue Jun 18 22:24:14 COT 2024 Thread[DRDAConnThread_3,5,main] (DATABASE = Ventas), (DRDAID = {2}), Cierre de la base de datos 'Ventas'.
+----------------------------------------------------------------
+Tue Jun 18 22:24:30 COT 2024:
+ Iniciando instancia 560740aa-0190-2e86-06f7-000029329a06 de Derby, versión The Apache Software Foundation - Apache Derby - 10.10.2.0 - (1582446): 
+en el directorio de base de datos D:\UNIVERSIDAD\APLICACIONES DISTRIBUIDAS\P1\SistemaDeventasCompleto\SistemaDeventas1\DataBase\Ventas con el cargador de clases sun.misc.Launcher$AppClassLoader@266474c2
+Cargado desde file:/C:/Program%20Files/glassfish-4.1/javadb/lib/derby.jar
+java.vendor=Oracle Corporation
+java.runtime.version=1.8.0_411-b09
+user.dir=C:\Program Files\glassfish-4.1\javadb
+os.name=Windows 11
+os.arch=amd64
+os.version=10.0
+derby.system.home=D:\UNIVERSIDAD\APLICACIONES DISTRIBUIDAS\P1\SistemaDeventasCompleto\SistemaDeventas1\DataBase
+Cargador de clases de base de datos iniciado - derby.database.classpath=''
