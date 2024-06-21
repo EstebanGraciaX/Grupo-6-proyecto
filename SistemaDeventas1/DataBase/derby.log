@@ -1,31 +1,130 @@
-Tue Jun 18 22:24:13 COT 2024 : Servidor de red Apache Derby: Se ha iniciado 10.10.2.0 - (1582446) y está listo para aceptar las conexiones en el puerto 1527
+Tue Jun 18 22:38:15 COT 2024 : Servidor de red Apache Derby: Se ha iniciado 10.14.2.0 - (1828579) y está listo para aceptar las conexiones en el puerto 1527
 ----------------------------------------------------------------
-Tue Jun 18 22:24:14 COT 2024:
- Iniciando instancia a816c00e-0190-2e86-06f7-000029329a06 de Derby, versión The Apache Software Foundation - Apache Derby - 10.10.2.0 - (1582446): 
-en el directorio de base de datos D:\UNIVERSIDAD\APLICACIONES DISTRIBUIDAS\P1\SistemaDeventasCompleto\SistemaDeventas1\DataBase\Ventas con el cargador de clases sun.misc.Launcher$AppClassLoader@266474c2
-Cargado desde file:/C:/Program%20Files/glassfish-4.1/javadb/lib/derby.jar
+Tue Jun 18 22:38:15 COT 2024:
+ Iniciando instancia a816c00e-0190-2e92-dc6e-fffffa6f2754 de Derby, versión The Apache Software Foundation - Apache Derby - 10.14.2.0 - (1828579): 
+en el directorio de base de datos C:\Users\exgra\Documents\git\Grupo-6-proyecto\SistemaDeventas1\DataBase\Ventas con el cargador de clases sun.misc.Launcher$AppClassLoader@266474c2
+Cargado desde file:/C:/Users/exgra/OneDrive/Documentos/Conector/db-derby-10.14.2.0-bin/db-derby-10.14.2.0-bin/lib/derby.jar
 java.vendor=Oracle Corporation
-java.runtime.version=1.8.0_411-b09
-user.dir=C:\Program Files\glassfish-4.1\javadb
+java.runtime.version=1.8.0_401-b10
+user.dir=C:\Users\exgra\OneDrive\Documentos\Conector\db-derby-10.14.2.0-bin\db-derby-10.14.2.0-bin
 os.name=Windows 11
 os.arch=amd64
 os.version=10.0
-derby.system.home=D:\UNIVERSIDAD\APLICACIONES DISTRIBUIDAS\P1\SistemaDeventasCompleto\SistemaDeventas1\DataBase
+derby.system.home=C:\Users\exgra\Documents\git\Grupo-6-proyecto\SistemaDeventas1\DataBase
 Cargador de clases de base de datos iniciado - derby.database.classpath=''
+Tue Jun 18 22:38:15 COT 2024 Thread[DRDAConnThread_2,5,main] (XID = 446), (SESSIONID = 0), (DATABASE = Ventas), (DRDAID = {1}), Cleanup action starting
+java.sql.SQLNonTransientConnectionException: Se ha producido un fallo de autenticación de conexión. Motivo: Autenticación no válida..
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.newSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.checkUserCredentials(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.<init>(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver$1.run(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver$1.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.apache.derby.jdbc.InternalDriver.getNewEmbedConnection(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver.connect(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver.connect(Unknown Source)
+	at org.apache.derby.jdbc.EmbeddedDriver.connect(Unknown Source)
+	at org.apache.derby.impl.drda.Database.makeConnection(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.getConnFromDatabaseName(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.verifyUserIdPassword(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.parseSECCHK(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.parseDRDAConnection(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.processCommands(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.run(Unknown Source)
+Caused by: ERROR 08004: Se ha producido un fallo de autenticación de conexión. Motivo: Autenticación no válida..
+	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.wrapArgsForTransportAcrossDRDA(Unknown Source)
+	... 21 more
+============= begin nested exception, level (1) ===========
+ERROR 08004: Se ha producido un fallo de autenticación de conexión. Motivo: Autenticación no válida..
+	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.wrapArgsForTransportAcrossDRDA(Unknown Source)
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.newSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.checkUserCredentials(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.<init>(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver$1.run(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver$1.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.apache.derby.jdbc.InternalDriver.getNewEmbedConnection(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver.connect(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver.connect(Unknown Source)
+	at org.apache.derby.jdbc.EmbeddedDriver.connect(Unknown Source)
+	at org.apache.derby.impl.drda.Database.makeConnection(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.getConnFromDatabaseName(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.verifyUserIdPassword(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.parseSECCHK(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.parseDRDAConnection(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.processCommands(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.run(Unknown Source)
+============= end nested exception, level (1) ===========
+Cleanup action completed
+Tue Jun 18 22:38:15 COT 2024 Thread[DRDAConnThread_2,5,main] (DATABASE = Ventas), (DRDAID = {1}), Se ha producido un fallo de autenticación de conexión. Motivo: Autenticación no válida..
+Tue Jun 18 22:38:34 COT 2024 Thread[DRDAConnThread_2,5,main] (XID = 447), (SESSIONID = 1), (DATABASE = Ventas), (DRDAID = {2}), Cleanup action starting
+java.sql.SQLNonTransientConnectionException: Se ha producido un fallo de autenticación de conexión. Motivo: Autenticación no válida..
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.newSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.checkUserCredentials(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.<init>(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver$1.run(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver$1.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.apache.derby.jdbc.InternalDriver.getNewEmbedConnection(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver.connect(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver.connect(Unknown Source)
+	at org.apache.derby.jdbc.EmbeddedDriver.connect(Unknown Source)
+	at org.apache.derby.impl.drda.Database.makeConnection(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.getConnFromDatabaseName(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.verifyUserIdPassword(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.parseSECCHK(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.parseDRDAConnection(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.processCommands(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.run(Unknown Source)
+Caused by: ERROR 08004: Se ha producido un fallo de autenticación de conexión. Motivo: Autenticación no válida..
+	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.wrapArgsForTransportAcrossDRDA(Unknown Source)
+	... 21 more
+============= begin nested exception, level (1) ===========
+ERROR 08004: Se ha producido un fallo de autenticación de conexión. Motivo: Autenticación no válida..
+	at org.apache.derby.iapi.error.StandardException.newException(Unknown Source)
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.wrapArgsForTransportAcrossDRDA(Unknown Source)
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.newSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.checkUserCredentials(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.<init>(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver$1.run(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver$1.run(Unknown Source)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.apache.derby.jdbc.InternalDriver.getNewEmbedConnection(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver.connect(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver.connect(Unknown Source)
+	at org.apache.derby.jdbc.EmbeddedDriver.connect(Unknown Source)
+	at org.apache.derby.impl.drda.Database.makeConnection(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.getConnFromDatabaseName(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.verifyUserIdPassword(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.parseSECCHK(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.parseDRDAConnection(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.processCommands(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.run(Unknown Source)
+============= end nested exception, level (1) ===========
+Cleanup action completed
+Tue Jun 18 22:38:34 COT 2024 Thread[DRDAConnThread_2,5,main] (DATABASE = Ventas), (DRDAID = {2}), Se ha producido un fallo de autenticación de conexión. Motivo: Autenticación no válida..
 ----------------------------------------------------------------
-Tue Jun 18 22:24:14 COT 2024:
-Cerrando la instancia a816c00e-0190-2e86-06f7-000029329a06 en el directorio de base de datos D:\UNIVERSIDAD\APLICACIONES DISTRIBUIDAS\P1\SistemaDeventasCompleto\SistemaDeventas1\DataBase\Ventas con cargador de clases sun.misc.Launcher$AppClassLoader@266474c2
-Tue Jun 18 22:24:14 COT 2024 Thread[DRDAConnThread_3,5,main] (DATABASE = Ventas), (DRDAID = {2}), Cierre de la base de datos 'Ventas'.
+Tue Jun 18 23:02:55 COT 2024: cerrando motor de Derby
 ----------------------------------------------------------------
-Tue Jun 18 22:24:30 COT 2024:
- Iniciando instancia 560740aa-0190-2e86-06f7-000029329a06 de Derby, versión The Apache Software Foundation - Apache Derby - 10.10.2.0 - (1582446): 
-en el directorio de base de datos D:\UNIVERSIDAD\APLICACIONES DISTRIBUIDAS\P1\SistemaDeventasCompleto\SistemaDeventas1\DataBase\Ventas con el cargador de clases sun.misc.Launcher$AppClassLoader@266474c2
-Cargado desde file:/C:/Program%20Files/glassfish-4.1/javadb/lib/derby.jar
-java.vendor=Oracle Corporation
-java.runtime.version=1.8.0_411-b09
-user.dir=C:\Program Files\glassfish-4.1\javadb
-os.name=Windows 11
-os.arch=amd64
-os.version=10.0
-derby.system.home=D:\UNIVERSIDAD\APLICACIONES DISTRIBUIDAS\P1\SistemaDeventasCompleto\SistemaDeventas1\DataBase
-Cargador de clases de base de datos iniciado - derby.database.classpath=''
+Tue Jun 18 23:02:55 COT 2024:
+Cerrando la instancia a816c00e-0190-2e92-dc6e-fffffa6f2754 en el directorio de base de datos C:\Users\exgra\Documents\git\Grupo-6-proyecto\SistemaDeventas1\DataBase\Ventas con cargador de clases sun.misc.Launcher$AppClassLoader@266474c2
+----------------------------------------------------------------
