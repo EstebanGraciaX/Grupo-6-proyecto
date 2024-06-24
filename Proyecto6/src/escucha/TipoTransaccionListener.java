@@ -7,8 +7,8 @@ import persistencia.TipoTransaccionDAO;
 import presentacion.TipoTransaccionFrame;
 
 public class TipoTransaccionListener implements ActionListener {
-    private TipoTransaccionFrame frame;
-    private TipoTransaccionDAO tipoTransaccionDAO;
+    private final TipoTransaccionFrame frame;
+    private final TipoTransaccionDAO tipoTransaccionDAO;
 
     public TipoTransaccionListener(TipoTransaccionFrame frame) {
         this.frame = frame;

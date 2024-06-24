@@ -51,7 +51,7 @@ public class CuentaBancariaFrame extends JPanel {
         btnGuardar.addActionListener(new CuentaBancariaListener(this));
     }
 
-    private void loadData() {
+    public void loadData() {
         List<CuentaBancaria> cuentasBancarias = cuentaBancariaDAO.getAllCuentasBancarias();
         String[] columnNames = {"ID", "Número de Cuenta", "Cliente", "Descripción"};
         String[][] data = new String[cuentasBancarias.size()][4];

@@ -1,7 +1,6 @@
 package main;
 
 import recurso.DBConnection;
-import presentacion.MainFrame;
 
 public class Main {
     public static void main(String[] args) {

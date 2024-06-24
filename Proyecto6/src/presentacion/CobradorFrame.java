@@ -46,7 +46,7 @@ public class CobradorFrame extends JPanel {
         btnGuardar.addActionListener(new CobradorListener(this));
     }
 
-    private void loadData() {
+    public void loadData() {
         List<Cobrador> cobradores = cobradorDAO.getAllCobradores();
         String[] columnNames = {"ID", "Cédula", "Nombre", "Dirección"};
         String[][] data = new String[cobradores.size()][4];

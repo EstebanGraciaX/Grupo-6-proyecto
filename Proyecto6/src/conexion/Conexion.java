@@ -10,7 +10,7 @@ public class Conexion {
     public static Connection getConnection() {
         if (connection == null) {
             try {
-                connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/mi_base_datos", "usuario", "contraseña");
+                connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/proyecto6_db", "usuario", "contraseña");
             } catch (SQLException e) {
                 e.printStackTrace();
             }

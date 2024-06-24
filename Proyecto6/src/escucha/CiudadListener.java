@@ -7,8 +7,8 @@ import persistencia.CiudadDAO;
 import presentacion.CiudadFrame;
 
 public class CiudadListener implements ActionListener {
-    private CiudadFrame frame;
-    private CiudadDAO ciudadDAO;
+    private final CiudadFrame frame;
+    private final CiudadDAO ciudadDAO;
 
     public CiudadListener(CiudadFrame frame) {
         this.frame = frame;

@@ -2,7 +2,6 @@ package presentacion;
 
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import negocio.TipoMovimiento;
 import persistencia.TipoMovimientoDAO;
@@ -12,7 +11,7 @@ public class TipoMovimientoFrame extends JPanel {
     private JTable table;
     private JTextField txtCodigo, txtNombre, txtSigno;
     private JButton btnGuardar;
-    private TipoMovimientoDAO tipoMovimientoDAO;
+    private final TipoMovimientoDAO tipoMovimientoDAO;
 
     public TipoMovimientoFrame() {
         tipoMovimientoDAO = new TipoMovimientoDAO();
@@ -44,7 +43,7 @@ public class TipoMovimientoFrame extends JPanel {
         table = new JTable();
         add(new JScrollPane(table), BorderLayout.CENTER);
 
-        btnGuardar.addActionListener(new TipoMovimientoListener(this));
+        btnGuardar.addActionListener((ActionListener) new TipoMovimientoListener(this));
     }
 
     private void loadData() {

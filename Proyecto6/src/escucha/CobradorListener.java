@@ -7,8 +7,8 @@ import persistencia.CobradorDAO;
 import presentacion.CobradorFrame;
 
 public class CobradorListener implements ActionListener {
-    private CobradorFrame frame;
-    private CobradorDAO cobradorDAO;
+    private final CobradorFrame frame;
+    private final CobradorDAO cobradorDAO;
 
     public CobradorListener(CobradorFrame frame) {
         this.frame = frame;

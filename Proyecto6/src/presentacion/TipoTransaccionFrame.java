@@ -46,7 +46,7 @@ public class TipoTransaccionFrame extends JPanel {
         btnGuardar.addActionListener(new TipoTransaccionListener(this));
     }
 
-    private void loadData() {
+    public void loadData() {
         List<TipoTransaccion> tiposTransaccion = tipoTransaccionDAO.getAllTiposTransaccion();
         String[] columnNames = {"ID", "Código", "Nombre", "Signo"};
         String[][] data = new String[tiposTransaccion.size()][4];

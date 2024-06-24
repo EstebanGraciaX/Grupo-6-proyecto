@@ -7,8 +7,8 @@ import persistencia.FormaPagoDAO;
 import presentacion.FormaPagoFrame;
 
 public class FormaPagoListener implements ActionListener {
-    private FormaPagoFrame frame;
-    private FormaPagoDAO formaPagoDAO;
+    private final FormaPagoFrame frame;
+    private final FormaPagoDAO formaPagoDAO;
 
     public FormaPagoListener(FormaPagoFrame frame) {
         this.frame = frame;

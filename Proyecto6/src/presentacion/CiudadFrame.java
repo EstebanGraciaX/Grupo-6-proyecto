@@ -42,7 +42,7 @@ public class CiudadFrame extends JPanel {
         btnGuardar.addActionListener(new CiudadListener(this));
     }
 
-    private void loadData() {
+    public void loadData() {
         List<Ciudad> ciudades = ciudadDAO.getAllCiudades();
         String[] columnNames = {"ID", "Código", "Nombre"};
         String[][] data = new String[ciudades.size()][3];

@@ -1,4 +1,4 @@
-/package presentacion;
+package presentacion;
 
 import javax.swing.*;
 import java.awt.*;
@@ -11,7 +11,7 @@ public class ClienteFrame extends JPanel {
     private JTable table;
     private JTextField txtRuc, txtNombre, txtDireccion;
     private JButton btnGuardar;
-    private ClienteDAO clienteDAO;
+    private final ClienteDAO clienteDAO;
 
     public ClienteFrame() {
         clienteDAO = new ClienteDAO();

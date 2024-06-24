@@ -42,7 +42,7 @@ public class FormaPagoFrame extends JPanel {
         btnGuardar.addActionListener(new FormaPagoListener(this));
     }
 
-    private void loadData() {
+    public void loadData() {
         List<FormaPago> formasPago = formaPagoDAO.getAllFormasPago();
         String[] columnNames = {"ID", "Código", "Nombre"};
         String[][] data = new String[formasPago.size()][3];
