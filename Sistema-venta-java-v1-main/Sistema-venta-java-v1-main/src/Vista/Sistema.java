@@ -1827,7 +1827,7 @@ public final class Sistema extends javax.swing.JFrame {
 
         jMenu1.setText("INVENTARIO");
 
-        jMenuItem1.setText("jMenuItem1");
+        jMenuItem1.setText("Articulo");
         jMenuItem1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jMenuItem1ActionPerformed(evt);
