@@ -860,7 +860,7 @@ public final class Sistema extends javax.swing.JFrame {
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/encabezado.png"))); // NOI18N
         jLabel2.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 0, 870, 130));
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 0, 870, 90));
 
         jTabbedPane1.setBackground(new java.awt.Color(255, 255, 255));
 
@@ -888,6 +888,11 @@ public final class Sistema extends javax.swing.JFrame {
         jLabel7.setText("Stock Disponible");
         jPanel2.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 120, -1, -1));
 
+        txtCodigoVenta.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtCodigoVentaActionPerformed(evt);
+            }
+        });
         txtCodigoVenta.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
                 txtCodigoVentaKeyPressed(evt);
@@ -1049,15 +1054,10 @@ public final class Sistema extends javax.swing.JFrame {
         jScrollPane2.setViewportView(TableCliente);
         if (TableCliente.getColumnModel().getColumnCount() > 0) {
             TableCliente.getColumnModel().getColumn(0).setPreferredWidth(10);
-            TableCliente.getColumnModel().getColumn(0).setHeaderValue("ID");
             TableCliente.getColumnModel().getColumn(1).setPreferredWidth(50);
-            TableCliente.getColumnModel().getColumn(1).setHeaderValue("DNI/RUC");
             TableCliente.getColumnModel().getColumn(2).setPreferredWidth(100);
-            TableCliente.getColumnModel().getColumn(2).setHeaderValue("NOMBRE");
             TableCliente.getColumnModel().getColumn(3).setPreferredWidth(50);
-            TableCliente.getColumnModel().getColumn(3).setHeaderValue("TELÉFONO");
             TableCliente.getColumnModel().getColumn(4).setPreferredWidth(80);
-            TableCliente.getColumnModel().getColumn(4).setHeaderValue("DIRECCIÓN");
         }
 
         jPanel3.add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 50, 555, 330));
@@ -1068,6 +1068,11 @@ public final class Sistema extends javax.swing.JFrame {
         jLabel12.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel12.setText("Dni/Ruc:");
 
+        txtDniCliente.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtDniClienteActionPerformed(evt);
+            }
+        });
         txtDniCliente.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
                 txtDniClienteKeyTyped(evt);
@@ -1497,7 +1502,7 @@ public final class Sistema extends javax.swing.JFrame {
         jPanel11Layout.setVerticalGroup(
             jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel11Layout.createSequentialGroup()
-                .addContainerGap(16, Short.MAX_VALUE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel11Layout.createSequentialGroup()
                         .addGap(4, 4, 4)
@@ -1735,7 +1740,7 @@ public final class Sistema extends javax.swing.JFrame {
                 .addComponent(jLabel37)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(cbxRol, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 9, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(btnIniciar, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
@@ -3404,7 +3409,7 @@ public final class Sistema extends javax.swing.JFrame {
 
             },
             new String [] {
-                "ID", "DNI/RUC", "NOMBRE", "TELÉFONO", "DIRECCIÓN"
+                "ID", "CODIGO", "NOMBRE", "TIPO"
             }
         ));
         TableCliente6.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -3415,15 +3420,9 @@ public final class Sistema extends javax.swing.JFrame {
         jScrollPane17.setViewportView(TableCliente6);
         if (TableCliente6.getColumnModel().getColumnCount() > 0) {
             TableCliente6.getColumnModel().getColumn(0).setPreferredWidth(10);
-            TableCliente6.getColumnModel().getColumn(0).setHeaderValue("ID");
             TableCliente6.getColumnModel().getColumn(1).setPreferredWidth(50);
-            TableCliente6.getColumnModel().getColumn(1).setHeaderValue("DNI/RUC");
             TableCliente6.getColumnModel().getColumn(2).setPreferredWidth(100);
-            TableCliente6.getColumnModel().getColumn(2).setHeaderValue("NOMBRE");
             TableCliente6.getColumnModel().getColumn(3).setPreferredWidth(50);
-            TableCliente6.getColumnModel().getColumn(3).setHeaderValue("TELÉFONO");
-            TableCliente6.getColumnModel().getColumn(4).setPreferredWidth(80);
-            TableCliente6.getColumnModel().getColumn(4).setHeaderValue("DIRECCIÓN");
         }
 
         jPanel30.add(jScrollPane17, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 50, 555, 330));
@@ -3432,7 +3431,7 @@ public final class Sistema extends javax.swing.JFrame {
         jPanel31.setBorder(javax.swing.BorderFactory.createTitledBorder("Registro Cliente"));
 
         jLabel104.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jLabel104.setText("Dni/Ruc:");
+        jLabel104.setText("Codigo");
 
         txtDniCliente6.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
@@ -3444,7 +3443,7 @@ public final class Sistema extends javax.swing.JFrame {
         jLabel105.setText("Nombre:");
 
         jLabel106.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jLabel106.setText("Télefono:");
+        jLabel106.setText("Tipo");
 
         jLabel107.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel107.setText("Dirección:");
@@ -3571,7 +3570,7 @@ public final class Sistema extends javax.swing.JFrame {
 
             },
             new String [] {
-                "ID", "DNI/RUC", "NOMBRE", "TELÉFONO", "DIRECCIÓN"
+                "CUENTA", "NOMBRE", "DESCRIPCION"
             }
         ));
         TableCliente7.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -3581,16 +3580,9 @@ public final class Sistema extends javax.swing.JFrame {
         });
         jScrollPane18.setViewportView(TableCliente7);
         if (TableCliente7.getColumnModel().getColumnCount() > 0) {
-            TableCliente7.getColumnModel().getColumn(0).setPreferredWidth(10);
-            TableCliente7.getColumnModel().getColumn(0).setHeaderValue("ID");
-            TableCliente7.getColumnModel().getColumn(1).setPreferredWidth(50);
-            TableCliente7.getColumnModel().getColumn(1).setHeaderValue("DNI/RUC");
-            TableCliente7.getColumnModel().getColumn(2).setPreferredWidth(100);
-            TableCliente7.getColumnModel().getColumn(2).setHeaderValue("NOMBRE");
-            TableCliente7.getColumnModel().getColumn(3).setPreferredWidth(50);
-            TableCliente7.getColumnModel().getColumn(3).setHeaderValue("TELÉFONO");
-            TableCliente7.getColumnModel().getColumn(4).setPreferredWidth(80);
-            TableCliente7.getColumnModel().getColumn(4).setHeaderValue("DIRECCIÓN");
+            TableCliente7.getColumnModel().getColumn(0).setPreferredWidth(50);
+            TableCliente7.getColumnModel().getColumn(1).setPreferredWidth(100);
+            TableCliente7.getColumnModel().getColumn(2).setPreferredWidth(50);
         }
 
         jPanel32.add(jScrollPane18, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 50, 555, 330));
@@ -3599,8 +3591,13 @@ public final class Sistema extends javax.swing.JFrame {
         jPanel33.setBorder(javax.swing.BorderFactory.createTitledBorder("Registro Cliente"));
 
         jLabel108.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jLabel108.setText("Dni/Ruc:");
+        jLabel108.setText("Cuenta");
 
+        txtDniCliente7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtDniCliente7ActionPerformed(evt);
+            }
+        });
         txtDniCliente7.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
                 txtDniCliente7KeyTyped(evt);
@@ -3611,7 +3608,7 @@ public final class Sistema extends javax.swing.JFrame {
         jLabel109.setText("Nombre:");
 
         jLabel110.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jLabel110.setText("Télefono:");
+        jLabel110.setText("Descripcion");
 
         jLabel111.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel111.setText("Dirección:");
@@ -3896,7 +3893,7 @@ public final class Sistema extends javax.swing.JFrame {
 
         jTabbedPane1.addTab("20", jPanel34);
 
-        getContentPane().add(jTabbedPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 95, 860, 460));
+        getContentPane().add(jTabbedPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 100, 860, 460));
 
         jLabel38.setFont(new java.awt.Font("Times New Roman", 3, 18)); // NOI18N
         jLabel38.setText("Desarrollado por: Grupo6");
@@ -5156,6 +5153,18 @@ public final class Sistema extends javax.swing.JFrame {
     private void jMenuItem12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem12ActionPerformed
         jTabbedPane1.setSelectedIndex(19);
     }//GEN-LAST:event_jMenuItem12ActionPerformed
+
+    private void txtCodigoVentaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtCodigoVentaActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtCodigoVentaActionPerformed
+
+    private void txtDniCliente7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtDniCliente7ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtDniCliente7ActionPerformed
+
+    private void txtDniClienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtDniClienteActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtDniClienteActionPerformed
     /* Hasta aqui es de txt Articulo*/
     
     /**
