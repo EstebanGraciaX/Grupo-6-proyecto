@@ -41,24 +41,24 @@ public class TipoBDao {
     }
 
     public List<TipoB> listarTipoB(){
-        List<TipoB> listaTiposB = new ArrayList<>();
+        List<TipoB> listaTipoB = new ArrayList<>();
         String sql = "SELECT * FROM tipo_b";
         try {
             con = cn.getConnection();
             ps = con.prepareStatement(sql);
             rs = ps.executeQuery();
             while (rs.next()) {
-                TipoB tipoB = new TipoB();
-                tipoB.setId(rs.getInt("id"));
-                tipoB.setCodigo(rs.getString("codigo"));
-                tipoB.setNombre(rs.getString("nombre"));
-                tipoB.setTipo(rs.getString("tipo"));
-                listaTiposB.add(tipoB);
+                TipoB tb = new TipoB();
+                tb.setId(rs.getInt("id"));
+                tb.setCodigo(rs.getString("codigo"));
+                tb.setNombre(rs.getString("nombre"));
+                tb.setTipo(rs.getString("tipo"));
+                listatb.add(tb);
             }
         } catch (SQLException e) {
             System.out.println(e.toString());
         }
-        return listaTiposB;
+        return listatb;
     }
 
     public boolean eliminarTipoB(int id){

@@ -516,7 +516,7 @@
       </Properties>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="210" y="100" width="860" height="460"/>
+          <AbsoluteConstraints x="210" y="90" width="860" height="460"/>
         </Constraint>
       </Constraints>
 
@@ -5928,24 +5928,9 @@
                           <EmptySpace max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" alignment="0" attributes="0">
-                                  <Component id="jLabel104" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace min="43" pref="43" max="-2" attributes="0"/>
-                                  <Component id="txtDniCliente6" min="-2" pref="150" max="-2" attributes="0"/>
-                              </Group>
-                              <Group type="102" alignment="0" attributes="0">
-                                  <Component id="jLabel105" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace min="46" pref="46" max="-2" attributes="0"/>
-                                  <Component id="txtNombreCliente6" min="-2" pref="148" max="-2" attributes="0"/>
-                              </Group>
-                              <Group type="102" alignment="0" attributes="0">
                                   <Component id="jLabel106" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace min="40" pref="40" max="-2" attributes="0"/>
                                   <Component id="txtTelefonoCliente6" min="-2" pref="148" max="-2" attributes="0"/>
-                              </Group>
-                              <Group type="102" alignment="0" attributes="0">
-                                  <Component id="jLabel107" min="-2" max="-2" attributes="0"/>
-                                  <EmptySpace min="38" pref="38" max="-2" attributes="0"/>
-                                  <Component id="txtDirecionCliente6" min="-2" pref="148" max="-2" attributes="0"/>
                               </Group>
                               <Group type="102" alignment="0" attributes="0">
                                   <EmptySpace min="22" pref="22" max="-2" attributes="0"/>
@@ -5963,6 +5948,17 @@
                                   <EmptySpace min="39" pref="39" max="-2" attributes="0"/>
                                   <Component id="btnNuevoCliente6" min="-2" max="-2" attributes="0"/>
                               </Group>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Component id="jLabel104" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="jLabel105" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace min="-2" pref="35" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Component id="txtNombreCliente6" min="-2" pref="148" max="-2" attributes="0"/>
+                                      <Component id="txttbCliente6" min="-2" pref="150" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
                           </Group>
                           <EmptySpace max="32767" attributes="0"/>
                       </Group>
@@ -5977,17 +5973,19 @@
                                   <EmptySpace min="4" pref="4" max="-2" attributes="0"/>
                                   <Component id="jLabel104" min="-2" max="-2" attributes="0"/>
                               </Group>
-                              <Component id="txtDniCliente6" alignment="0" min="-2" pref="30" max="-2" attributes="0"/>
+                              <Component id="txttbCliente6" alignment="0" min="-2" pref="30" max="-2" attributes="0"/>
                           </Group>
-                          <EmptySpace min="10" pref="10" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Group type="102" alignment="0" attributes="0">
-                                  <EmptySpace min="4" pref="4" max="-2" attributes="0"/>
+                              <Group type="102" attributes="0">
+                                  <EmptySpace min="-2" pref="14" max="-2" attributes="0"/>
                                   <Component id="jLabel105" min="-2" max="-2" attributes="0"/>
                               </Group>
-                              <Component id="txtNombreCliente6" alignment="0" min="-2" pref="30" max="-2" attributes="0"/>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="txtNombreCliente6" min="-2" pref="30" max="-2" attributes="0"/>
+                              </Group>
                           </Group>
-                          <EmptySpace min="10" pref="10" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" alignment="0" attributes="0">
                                   <EmptySpace min="4" pref="4" max="-2" attributes="0"/>
@@ -5995,15 +5993,7 @@
                               </Group>
                               <Component id="txtTelefonoCliente6" alignment="0" min="-2" pref="30" max="-2" attributes="0"/>
                           </Group>
-                          <EmptySpace min="10" pref="10" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Group type="102" alignment="0" attributes="0">
-                                  <EmptySpace min="4" pref="4" max="-2" attributes="0"/>
-                                  <Component id="jLabel107" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                              <Component id="txtDirecionCliente6" alignment="0" min="-2" pref="30" max="-2" attributes="0"/>
-                          </Group>
-                          <EmptySpace min="24" pref="24" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="64" max="-2" attributes="0"/>
                           <Component id="txtIdCliente6" min="-2" max="-2" attributes="0"/>
                           <EmptySpace min="16" pref="16" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
@@ -6029,9 +6019,10 @@
                     <Property name="text" type="java.lang.String" value="Codigo"/>
                   </Properties>
                 </Component>
-                <Component class="javax.swing.JTextField" name="txtDniCliente6">
+                <Component class="javax.swing.JTextField" name="txttbCliente6">
                   <Events>
-                    <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="txtDniCliente6KeyTyped"/>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txttbCliente6ActionPerformed"/>
+                    <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="txttbCliente6KeyTyped"/>
                   </Events>
                 </Component>
                 <Component class="javax.swing.JLabel" name="jLabel105">
@@ -6043,8 +6034,14 @@
                   </Properties>
                 </Component>
                 <Component class="javax.swing.JTextField" name="txtNombreCliente6">
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtNombreCliente6ActionPerformed"/>
+                  </Events>
                 </Component>
                 <Component class="javax.swing.JTextField" name="txtTelefonoCliente6">
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtTelefonoCliente6ActionPerformed"/>
+                  </Events>
                 </Component>
                 <Component class="javax.swing.JLabel" name="jLabel106">
                   <Properties>
@@ -6053,16 +6050,6 @@
                     </Property>
                     <Property name="text" type="java.lang.String" value="Tipo"/>
                   </Properties>
-                </Component>
-                <Component class="javax.swing.JLabel" name="jLabel107">
-                  <Properties>
-                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                      <Font name="Tahoma" size="12" style="1"/>
-                    </Property>
-                    <Property name="text" type="java.lang.String" value="Direcci&#xf3;n:"/>
-                  </Properties>
-                </Component>
-                <Component class="javax.swing.JTextField" name="txtDirecionCliente6">
                 </Component>
                 <Component class="javax.swing.JTextField" name="txtIdCliente6">
                 </Component>
