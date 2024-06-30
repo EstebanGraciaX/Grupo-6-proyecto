@@ -91,7 +91,6 @@ public class Login extends javax.swing.JFrame {
         jPanel2.add(txtPass, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 199, 226, 30));
 
         btnIniciar.setBackground(new java.awt.Color(0, 0, 204));
-        btnIniciar.setForeground(new java.awt.Color(255, 255, 255));
         btnIniciar.setText("Login");
         btnIniciar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnIniciar.addActionListener(new java.awt.event.ActionListener() {
@@ -154,7 +153,7 @@ public class Login extends javax.swing.JFrame {
 
         jPanel2.add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 327, 226, -1));
 
-        getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 20, 280, 380));
+        getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 20, 280, 380));
 
         jPanel1.setBackground(new java.awt.Color(204, 204, 204));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -168,11 +167,10 @@ public class Login extends javax.swing.JFrame {
         jLabel8.setText("Informática y Programación");
         jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(21, 183, 230, -1));
 
-        jLabel9.setText("Desarrollado por Angel Sifuentes Flores");
-        jPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(21, 218, -1, 89));
+        jLabel9.setText("Desarrollado por Grupo6");
+        jPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 220, -1, 89));
 
         jButton1.setBackground(new java.awt.Color(255, 0, 0));
-        jButton1.setForeground(new java.awt.Color(255, 255, 255));
         jButton1.setText("Suscribete a mi Canal");
         jButton1.setFocusable(false);
         jButton1.addActionListener(new java.awt.event.ActionListener() {

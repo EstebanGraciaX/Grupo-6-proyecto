@@ -351,17 +351,37 @@ public final class Sistema extends javax.swing.JFrame {
         txtIdCV3 = new javax.swing.JTextField();
         txtIdPro3 = new javax.swing.JTextField();
         btnGraficar3 = new javax.swing.JButton();
+        jPanel14 = new javax.swing.JPanel();
+        jScrollPane8 = new javax.swing.JScrollPane();
+        TableCliente1 = new javax.swing.JTable();
+        jPanel16 = new javax.swing.JPanel();
+        jLabel50 = new javax.swing.JLabel();
+        txtDniCliente1 = new javax.swing.JTextField();
+        jLabel51 = new javax.swing.JLabel();
+        txtNombreCliente1 = new javax.swing.JTextField();
+        txtTelefonoCliente1 = new javax.swing.JTextField();
+        jLabel52 = new javax.swing.JLabel();
+        jLabel53 = new javax.swing.JLabel();
+        txtDirecionCliente1 = new javax.swing.JTextField();
+        txtIdCliente1 = new javax.swing.JTextField();
+        btnGuardarCliente1 = new javax.swing.JButton();
+        btnEditarCliente1 = new javax.swing.JButton();
+        btnEliminarCliente1 = new javax.swing.JButton();
+        btnNuevoCliente1 = new javax.swing.JButton();
         jLabel38 = new javax.swing.JLabel();
+        jMenuBar1 = new javax.swing.JMenuBar();
+        jMenu1 = new javax.swing.JMenu();
+        jMenuItem1 = new javax.swing.JMenuItem();
+        jMenu2 = new javax.swing.JMenu();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jPanel1.setBackground(new java.awt.Color(69, 8, 206));
+        jPanel1.setBackground(new java.awt.Color(102, 102, 102));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/logo_pdf.png"))); // NOI18N
 
         btnNuevaVenta.setBackground(new java.awt.Color(153, 153, 153));
-        btnNuevaVenta.setForeground(new java.awt.Color(255, 255, 255));
         btnNuevaVenta.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/Nventa.png"))); // NOI18N
         btnNuevaVenta.setText("Nueva Venta");
         btnNuevaVenta.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -373,7 +393,6 @@ public final class Sistema extends javax.swing.JFrame {
         });
 
         btnClientes.setBackground(new java.awt.Color(153, 153, 153));
-        btnClientes.setForeground(new java.awt.Color(255, 255, 255));
         btnClientes.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/Clientes.png"))); // NOI18N
         btnClientes.setText("Clientes");
         btnClientes.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -385,7 +404,6 @@ public final class Sistema extends javax.swing.JFrame {
         });
 
         btnProveedor.setBackground(new java.awt.Color(153, 153, 153));
-        btnProveedor.setForeground(new java.awt.Color(255, 255, 255));
         btnProveedor.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/proveedor.png"))); // NOI18N
         btnProveedor.setText("Proveedor");
         btnProveedor.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -397,7 +415,6 @@ public final class Sistema extends javax.swing.JFrame {
         });
 
         btnProductos.setBackground(new java.awt.Color(153, 153, 153));
-        btnProductos.setForeground(new java.awt.Color(255, 255, 255));
         btnProductos.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/producto.png"))); // NOI18N
         btnProductos.setText("Productos");
         btnProductos.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -414,7 +431,6 @@ public final class Sistema extends javax.swing.JFrame {
         });
 
         btnVentas.setBackground(new java.awt.Color(153, 153, 153));
-        btnVentas.setForeground(new java.awt.Color(255, 255, 255));
         btnVentas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/compras.png"))); // NOI18N
         btnVentas.setText("Ventas");
         btnVentas.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -426,7 +442,6 @@ public final class Sistema extends javax.swing.JFrame {
         });
 
         btnConfig.setBackground(new java.awt.Color(153, 153, 153));
-        btnConfig.setForeground(new java.awt.Color(255, 255, 255));
         btnConfig.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/config.png"))); // NOI18N
         btnConfig.setText("Config");
         btnConfig.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -455,7 +470,6 @@ public final class Sistema extends javax.swing.JFrame {
         });
 
         btnNuevaVenta1.setBackground(new java.awt.Color(153, 153, 153));
-        btnNuevaVenta1.setForeground(new java.awt.Color(255, 255, 255));
         btnNuevaVenta1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/Nventa.png"))); // NOI18N
         btnNuevaVenta1.setText("Nueva Venta");
         btnNuevaVenta1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -467,7 +481,6 @@ public final class Sistema extends javax.swing.JFrame {
         });
 
         btnClientes1.setBackground(new java.awt.Color(153, 153, 153));
-        btnClientes1.setForeground(new java.awt.Color(255, 255, 255));
         btnClientes1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/Clientes.png"))); // NOI18N
         btnClientes1.setText("Clientes");
         btnClientes1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -479,7 +492,6 @@ public final class Sistema extends javax.swing.JFrame {
         });
 
         btnProveedor1.setBackground(new java.awt.Color(153, 153, 153));
-        btnProveedor1.setForeground(new java.awt.Color(255, 255, 255));
         btnProveedor1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/proveedor.png"))); // NOI18N
         btnProveedor1.setText("Proveedor");
         btnProveedor1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -491,7 +503,6 @@ public final class Sistema extends javax.swing.JFrame {
         });
 
         btnProductos1.setBackground(new java.awt.Color(153, 153, 153));
-        btnProductos1.setForeground(new java.awt.Color(255, 255, 255));
         btnProductos1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/producto.png"))); // NOI18N
         btnProductos1.setText("Productos");
         btnProductos1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -508,7 +519,6 @@ public final class Sistema extends javax.swing.JFrame {
         });
 
         btnConfig1.setBackground(new java.awt.Color(153, 153, 153));
-        btnConfig1.setForeground(new java.awt.Color(255, 255, 255));
         btnConfig1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/config.png"))); // NOI18N
         btnConfig1.setText("Config");
         btnConfig1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -586,16 +596,15 @@ public final class Sistema extends javax.swing.JFrame {
                 .addGap(0, 0, Short.MAX_VALUE))
         );
 
-        btnNuevaVenta1.getAccessibleContext().setAccessibleParent(jPanel15);
-
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 200, 560));
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/encabezado.png"))); // NOI18N
+        jLabel2.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 0, 870, 130));
 
         jTabbedPane1.setBackground(new java.awt.Color(255, 255, 255));
 
-        jPanel2.setBackground(new java.awt.Color(102, 255, 204));
+        jPanel2.setBackground(new java.awt.Color(204, 204, 204));
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel3.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
@@ -629,6 +638,11 @@ public final class Sistema extends javax.swing.JFrame {
         });
         jPanel2.add(txtCodigoVenta, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 70, 102, 30));
 
+        txtDescripcionVenta.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtDescripcionVentaActionPerformed(evt);
+            }
+        });
         txtDescripcionVenta.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
                 txtDescripcionVentaKeyTyped(evt);
@@ -775,10 +789,15 @@ public final class Sistema extends javax.swing.JFrame {
         jScrollPane2.setViewportView(TableCliente);
         if (TableCliente.getColumnModel().getColumnCount() > 0) {
             TableCliente.getColumnModel().getColumn(0).setPreferredWidth(10);
+            TableCliente.getColumnModel().getColumn(0).setHeaderValue("ID");
             TableCliente.getColumnModel().getColumn(1).setPreferredWidth(50);
+            TableCliente.getColumnModel().getColumn(1).setHeaderValue("DNI/RUC");
             TableCliente.getColumnModel().getColumn(2).setPreferredWidth(100);
+            TableCliente.getColumnModel().getColumn(2).setHeaderValue("NOMBRE");
             TableCliente.getColumnModel().getColumn(3).setPreferredWidth(50);
+            TableCliente.getColumnModel().getColumn(3).setHeaderValue("TELÉFONO");
             TableCliente.getColumnModel().getColumn(4).setPreferredWidth(80);
+            TableCliente.getColumnModel().getColumn(4).setHeaderValue("DIRECCIÓN");
         }
 
         jPanel3.add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 50, 555, 330));
@@ -1101,8 +1120,20 @@ public final class Sistema extends javax.swing.JFrame {
         jLabel22.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel22.setText("Código:");
 
+        txtCodigoPro.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtCodigoProActionPerformed(evt);
+            }
+        });
+
         jLabel23.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel23.setText("Descripción:");
+
+        txtDesPro.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtDesProActionPerformed(evt);
+            }
+        });
 
         jLabel24.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel24.setText("Cantidad:");
@@ -1460,7 +1491,7 @@ public final class Sistema extends javax.swing.JFrame {
 
         jTabbedPane1.addTab("7", jPanel12);
 
-        jPanel15.setBackground(new java.awt.Color(102, 255, 204));
+        jPanel15.setBackground(new java.awt.Color(204, 204, 204));
         jPanel15.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jPanel15.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -1623,13 +1654,193 @@ public final class Sistema extends javax.swing.JFrame {
         jTabbedPane1.addTab("8", jPanel15);
         jPanel15.getAccessibleContext().setAccessibleName("");
         jPanel15.getAccessibleContext().setAccessibleDescription("");
-        jPanel15.getAccessibleContext().setAccessibleParent(jLabel14);
+        jPanel15.getAccessibleContext().setAccessibleParent(jLabel15);
+
+        jPanel14.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel14.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        TableCliente1.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+
+            },
+            new String [] {
+                "ID", "DNI/RUC", "NOMBRE", "TELÉFONO", "DIRECCIÓN"
+            }
+        ));
+        TableCliente1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                TableCliente1MouseClicked(evt);
+            }
+        });
+        jScrollPane8.setViewportView(TableCliente1);
+        if (TableCliente1.getColumnModel().getColumnCount() > 0) {
+            TableCliente1.getColumnModel().getColumn(0).setPreferredWidth(10);
+            TableCliente1.getColumnModel().getColumn(1).setPreferredWidth(50);
+            TableCliente1.getColumnModel().getColumn(2).setPreferredWidth(100);
+            TableCliente1.getColumnModel().getColumn(3).setPreferredWidth(50);
+            TableCliente1.getColumnModel().getColumn(4).setPreferredWidth(80);
+        }
+
+        jPanel14.add(jScrollPane8, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 50, 555, 330));
+
+        jPanel16.setBackground(new java.awt.Color(204, 204, 255));
+        jPanel16.setBorder(javax.swing.BorderFactory.createTitledBorder("Registro Cliente"));
+
+        jLabel50.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabel50.setText("Dni/Ruc:");
+
+        txtDniCliente1.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                txtDniCliente1KeyTyped(evt);
+            }
+        });
+
+        jLabel51.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabel51.setText("Nombre:");
+
+        jLabel52.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabel52.setText("Télefono:");
+
+        jLabel53.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabel53.setText("Dirección:");
+
+        btnGuardarCliente1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/GuardarTodo.png"))); // NOI18N
+        btnGuardarCliente1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnGuardarCliente1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnGuardarCliente1ActionPerformed(evt);
+            }
+        });
+
+        btnEditarCliente1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/Actualizar (2).png"))); // NOI18N
+        btnEditarCliente1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnEditarCliente1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnEditarCliente1ActionPerformed(evt);
+            }
+        });
+
+        btnEliminarCliente1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/eliminar.png"))); // NOI18N
+        btnEliminarCliente1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnEliminarCliente1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnEliminarCliente1ActionPerformed(evt);
+            }
+        });
+
+        btnNuevoCliente1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/nuevo.png"))); // NOI18N
+        btnNuevoCliente1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnNuevoCliente1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnNuevoCliente1ActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jPanel16Layout = new javax.swing.GroupLayout(jPanel16);
+        jPanel16.setLayout(jPanel16Layout);
+        jPanel16Layout.setHorizontalGroup(
+            jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel16Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel16Layout.createSequentialGroup()
+                        .addComponent(jLabel50)
+                        .addGap(43, 43, 43)
+                        .addComponent(txtDniCliente1, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel16Layout.createSequentialGroup()
+                        .addComponent(jLabel51)
+                        .addGap(46, 46, 46)
+                        .addComponent(txtNombreCliente1, javax.swing.GroupLayout.PREFERRED_SIZE, 148, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel16Layout.createSequentialGroup()
+                        .addComponent(jLabel52)
+                        .addGap(40, 40, 40)
+                        .addComponent(txtTelefonoCliente1, javax.swing.GroupLayout.PREFERRED_SIZE, 148, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel16Layout.createSequentialGroup()
+                        .addComponent(jLabel53)
+                        .addGap(38, 38, 38)
+                        .addComponent(txtDirecionCliente1, javax.swing.GroupLayout.PREFERRED_SIZE, 148, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel16Layout.createSequentialGroup()
+                        .addGap(22, 22, 22)
+                        .addComponent(txtIdCliente1, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel16Layout.createSequentialGroup()
+                        .addGap(55, 55, 55)
+                        .addComponent(btnGuardarCliente1)
+                        .addGap(39, 39, 39)
+                        .addComponent(btnEditarCliente1))
+                    .addGroup(jPanel16Layout.createSequentialGroup()
+                        .addGap(55, 55, 55)
+                        .addComponent(btnEliminarCliente1)
+                        .addGap(39, 39, 39)
+                        .addComponent(btnNuevoCliente1)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        jPanel16Layout.setVerticalGroup(
+            jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel16Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel16Layout.createSequentialGroup()
+                        .addGap(4, 4, 4)
+                        .addComponent(jLabel50))
+                    .addComponent(txtDniCliente1, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(10, 10, 10)
+                .addGroup(jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel16Layout.createSequentialGroup()
+                        .addGap(4, 4, 4)
+                        .addComponent(jLabel51))
+                    .addComponent(txtNombreCliente1, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(10, 10, 10)
+                .addGroup(jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel16Layout.createSequentialGroup()
+                        .addGap(4, 4, 4)
+                        .addComponent(jLabel52))
+                    .addComponent(txtTelefonoCliente1, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(10, 10, 10)
+                .addGroup(jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel16Layout.createSequentialGroup()
+                        .addGap(4, 4, 4)
+                        .addComponent(jLabel53))
+                    .addComponent(txtDirecionCliente1, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(24, 24, 24)
+                .addComponent(txtIdCliente1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(16, 16, 16)
+                .addGroup(jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(btnGuardarCliente1)
+                    .addComponent(btnEditarCliente1))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(btnEliminarCliente1, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnNuevoCliente1))
+                .addGap(29, 29, 29))
+        );
+
+        jPanel14.add(jPanel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 50, 270, 330));
+
+        jTabbedPane1.addTab("9", jPanel14);
+        jPanel14.getAccessibleContext().setAccessibleParent(jLabel14);
 
         getContentPane().add(jTabbedPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 95, 860, 460));
 
         jLabel38.setFont(new java.awt.Font("Times New Roman", 3, 18)); // NOI18N
-        jLabel38.setText("Desarrollado por: Angel Sifuentes");
-        getContentPane().add(jLabel38, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 70, -1, -1));
+        jLabel38.setText("Desarrollado por: Grupo6");
+        getContentPane().add(jLabel38, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 80, -1, -1));
+
+        jMenu1.setText("INVENTARIO");
+
+        jMenuItem1.setText("jMenuItem1");
+        jMenuItem1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem1ActionPerformed(evt);
+            }
+        });
+        jMenu1.add(jMenuItem1);
+
+        jMenuBar1.add(jMenu1);
+
+        jMenu2.setText("FACTURACION ");
+        jMenuBar1.add(jMenu2);
+
+        setJMenuBar(jMenuBar1);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -1698,27 +1909,97 @@ public final class Sistema extends javax.swing.JFrame {
 
     private void btnNuevaVenta1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNuevaVenta1ActionPerformed
         // TODO add your handling code here:
+          jTabbedPane1.setSelectedIndex(7);
     }//GEN-LAST:event_btnNuevaVenta1ActionPerformed
 
     private void btnClientes1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnClientes1ActionPerformed
         // TODO add your handling code here:
+         LimpiarTable();
+        ListarCliente();
+        btnEditarCliente.setEnabled(false);
+        btnEliminarCliente.setEnabled(false);
+        LimpiarCliente();
+        jTabbedPane1.setSelectedIndex(1);
     }//GEN-LAST:event_btnClientes1ActionPerformed
 
     private void btnProveedor1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnProveedor1ActionPerformed
         // TODO add your handling code here:
+       LimpiarTable();
+        ListarProveedor();
+        jTabbedPane1.setSelectedIndex(2);
+        btnEditarProveedor.setEnabled(true);
+        btnEliminarProveedor.setEnabled(true);
+        LimpiarProveedor(); 
     }//GEN-LAST:event_btnProveedor1ActionPerformed
 
     private void btnProductos1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnProductos1MouseClicked
         // TODO add your handling code here:
+        cbxProveedorPro.removeAllItems();
+        llenarProveedor();
     }//GEN-LAST:event_btnProductos1MouseClicked
 
     private void btnProductos1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnProductos1ActionPerformed
         // TODO add your handling code here:
+        LimpiarTable();
+        ListarProductos();
+        jTabbedPane1.setSelectedIndex(3);
+        btnEditarpro.setEnabled(false);
+        btnEliminarPro.setEnabled(false);
+        btnGuardarpro.setEnabled(true);
+        LimpiarProductos();
     }//GEN-LAST:event_btnProductos1ActionPerformed
 
     private void btnConfig1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnConfig1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_btnConfig1ActionPerformed
+
+    private void btnGraficar3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGraficar3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnGraficar3ActionPerformed
+
+    private void btnGenerarVenta3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGenerarVenta3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnGenerarVenta3ActionPerformed
+
+    private void btnGraficar2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGraficar2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnGraficar2ActionPerformed
+
+    private void btnGenerarVenta2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGenerarVenta2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnGenerarVenta2ActionPerformed
+
+    private void txtRucVenta1KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtRucVenta1KeyTyped
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtRucVenta1KeyTyped
+
+    private void txtRucVenta1KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtRucVenta1KeyPressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtRucVenta1KeyPressed
+
+    private void btnEliminarventa1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEliminarventa1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnEliminarventa1ActionPerformed
+
+    private void txtCantidadVenta1KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtCantidadVenta1KeyTyped
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtCantidadVenta1KeyTyped
+
+    private void txtCantidadVenta1KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtCantidadVenta1KeyPressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtCantidadVenta1KeyPressed
+
+    private void txtDescripcionVenta1KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtDescripcionVenta1KeyTyped
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtDescripcionVenta1KeyTyped
+
+    private void txtCodigoVenta1KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtCodigoVenta1KeyTyped
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtCodigoVenta1KeyTyped
+
+    private void txtCodigoVenta1KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtCodigoVenta1KeyPressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtCodigoVenta1KeyPressed
 
     private void btnIniciarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnIniciarActionPerformed
         if(txtNombre.getText().equals("") || txtCorreo.getText().equals("") || txtPass.getPassword().equals("")){
@@ -2042,6 +2323,14 @@ public final class Sistema extends javax.swing.JFrame {
         txtDirecionCliente.setText(TableCliente.getValueAt(fila, 4).toString());
     }//GEN-LAST:event_TableClienteMouseClicked
 
+    private void btnGraficar1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGraficar1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnGraficar1ActionPerformed
+
+    private void btnGenerarVenta1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGenerarVenta1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnGenerarVenta1ActionPerformed
+
     private void btnGraficarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGraficarActionPerformed
         // TODO add your handling code here:
 
@@ -2179,61 +2468,46 @@ public final class Sistema extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_txtCodigoVentaKeyPressed
 
-    private void btnGenerarVenta1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGenerarVenta1ActionPerformed
+    private void txtDescripcionVentaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtDescripcionVentaActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_btnGenerarVenta1ActionPerformed
+    }//GEN-LAST:event_txtDescripcionVentaActionPerformed
 
-    private void btnGraficar1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGraficar1ActionPerformed
+    private void TableCliente1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_TableCliente1MouseClicked
         // TODO add your handling code here:
-    }//GEN-LAST:event_btnGraficar1ActionPerformed
+    }//GEN-LAST:event_TableCliente1MouseClicked
 
-    private void txtCodigoVenta1KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtCodigoVenta1KeyPressed
+    private void txtDniCliente1KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtDniCliente1KeyTyped
         // TODO add your handling code here:
-    }//GEN-LAST:event_txtCodigoVenta1KeyPressed
+    }//GEN-LAST:event_txtDniCliente1KeyTyped
 
-    private void txtCodigoVenta1KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtCodigoVenta1KeyTyped
+    private void btnGuardarCliente1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGuardarCliente1ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_txtCodigoVenta1KeyTyped
+    }//GEN-LAST:event_btnGuardarCliente1ActionPerformed
 
-    private void txtDescripcionVenta1KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtDescripcionVenta1KeyTyped
+    private void btnEditarCliente1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEditarCliente1ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_txtDescripcionVenta1KeyTyped
+    }//GEN-LAST:event_btnEditarCliente1ActionPerformed
 
-    private void txtCantidadVenta1KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtCantidadVenta1KeyPressed
+    private void btnEliminarCliente1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEliminarCliente1ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_txtCantidadVenta1KeyPressed
+    }//GEN-LAST:event_btnEliminarCliente1ActionPerformed
 
-    private void txtCantidadVenta1KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtCantidadVenta1KeyTyped
+    private void btnNuevoCliente1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNuevoCliente1ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_txtCantidadVenta1KeyTyped
+    }//GEN-LAST:event_btnNuevoCliente1ActionPerformed
 
-    private void btnEliminarventa1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEliminarventa1ActionPerformed
+    private void txtCodigoProActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtCodigoProActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_btnEliminarventa1ActionPerformed
+    }//GEN-LAST:event_txtCodigoProActionPerformed
 
-    private void txtRucVenta1KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtRucVenta1KeyPressed
+    private void txtDesProActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtDesProActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_txtRucVenta1KeyPressed
+    }//GEN-LAST:event_txtDesProActionPerformed
 
-    private void txtRucVenta1KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtRucVenta1KeyTyped
+    private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_txtRucVenta1KeyTyped
-
-    private void btnGenerarVenta2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGenerarVenta2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnGenerarVenta2ActionPerformed
-
-    private void btnGraficar2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGraficar2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnGraficar2ActionPerformed
-
-    private void btnGenerarVenta3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGenerarVenta3ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnGenerarVenta3ActionPerformed
-
-    private void btnGraficar3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGraficar3ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnGraficar3ActionPerformed
+        jTabbedPane1.setSelectedIndex(3);
+    }//GEN-LAST:event_jMenuItem1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -2279,6 +2553,7 @@ public final class Sistema extends javax.swing.JFrame {
     private com.toedter.calendar.JDateChooser Midate;
     private com.toedter.calendar.JDateChooser Midate1;
     private javax.swing.JTable TableCliente;
+    private javax.swing.JTable TableCliente1;
     private javax.swing.JTable TableProducto;
     private javax.swing.JTable TableProveedor;
     private javax.swing.JTable TableUsuarios;
@@ -2291,9 +2566,11 @@ public final class Sistema extends javax.swing.JFrame {
     private javax.swing.JButton btnConfig;
     private javax.swing.JButton btnConfig1;
     private javax.swing.JButton btnEditarCliente;
+    private javax.swing.JButton btnEditarCliente1;
     private javax.swing.JButton btnEditarProveedor;
     private javax.swing.JButton btnEditarpro;
     private javax.swing.JButton btnEliminarCliente;
+    private javax.swing.JButton btnEliminarCliente1;
     private javax.swing.JButton btnEliminarPro;
     private javax.swing.JButton btnEliminarProveedor;
     private javax.swing.JButton btnEliminarventa;
@@ -2307,11 +2584,13 @@ public final class Sistema extends javax.swing.JFrame {
     private javax.swing.JButton btnGraficar2;
     private javax.swing.JButton btnGraficar3;
     private javax.swing.JButton btnGuardarCliente;
+    private javax.swing.JButton btnGuardarCliente1;
     private javax.swing.JButton btnGuardarpro;
     private javax.swing.JButton btnIniciar;
     private javax.swing.JButton btnNuevaVenta;
     private javax.swing.JButton btnNuevaVenta1;
     private javax.swing.JButton btnNuevoCliente;
+    private javax.swing.JButton btnNuevoCliente1;
     private javax.swing.JButton btnNuevoPro;
     private javax.swing.JButton btnNuevoProveedor;
     private javax.swing.JButton btnPdfVentas;
@@ -2369,16 +2648,26 @@ public final class Sistema extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel48;
     private javax.swing.JLabel jLabel49;
     private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel50;
+    private javax.swing.JLabel jLabel51;
+    private javax.swing.JLabel jLabel52;
+    private javax.swing.JLabel jLabel53;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
+    private javax.swing.JMenu jMenu1;
+    private javax.swing.JMenu jMenu2;
+    private javax.swing.JMenuBar jMenuBar1;
+    private javax.swing.JMenuItem jMenuItem1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel10;
     private javax.swing.JPanel jPanel11;
     private javax.swing.JPanel jPanel12;
     private javax.swing.JPanel jPanel13;
+    private javax.swing.JPanel jPanel14;
     private javax.swing.JPanel jPanel15;
+    private javax.swing.JPanel jPanel16;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
@@ -2394,6 +2683,7 @@ public final class Sistema extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane5;
     private javax.swing.JScrollPane jScrollPane6;
     private javax.swing.JScrollPane jScrollPane7;
+    private javax.swing.JScrollPane jScrollPane8;
     private javax.swing.JTabbedPane jTabbedPane1;
     private javax.swing.JLabel tipo;
     private javax.swing.JTextField txtCantPro;
@@ -2409,12 +2699,15 @@ public final class Sistema extends javax.swing.JFrame {
     private javax.swing.JTextField txtDireccionConfig;
     private javax.swing.JTextField txtDireccionProveedor;
     private javax.swing.JTextField txtDirecionCliente;
+    private javax.swing.JTextField txtDirecionCliente1;
     private javax.swing.JTextField txtDniCliente;
+    private javax.swing.JTextField txtDniCliente1;
     private javax.swing.JTextField txtIdCV;
     private javax.swing.JTextField txtIdCV1;
     private javax.swing.JTextField txtIdCV2;
     private javax.swing.JTextField txtIdCV3;
     private javax.swing.JTextField txtIdCliente;
+    private javax.swing.JTextField txtIdCliente1;
     private javax.swing.JTextField txtIdConfig;
     private javax.swing.JTextField txtIdPro;
     private javax.swing.JTextField txtIdPro1;
@@ -2426,6 +2719,7 @@ public final class Sistema extends javax.swing.JFrame {
     private javax.swing.JTextField txtMensaje;
     private javax.swing.JTextField txtNombre;
     private javax.swing.JTextField txtNombreCliente;
+    private javax.swing.JTextField txtNombreCliente1;
     private javax.swing.JTextField txtNombreClienteventa;
     private javax.swing.JTextField txtNombreClienteventa1;
     private javax.swing.JTextField txtNombreConfig;
@@ -2441,6 +2735,7 @@ public final class Sistema extends javax.swing.JFrame {
     private javax.swing.JTextField txtStockDisponible;
     private javax.swing.JTextField txtStockDisponible1;
     private javax.swing.JTextField txtTelefonoCliente;
+    private javax.swing.JTextField txtTelefonoCliente1;
     private javax.swing.JTextField txtTelefonoConfig;
     private javax.swing.JTextField txtTelefonoProveedor;
     // End of variables declaration//GEN-END:variables
