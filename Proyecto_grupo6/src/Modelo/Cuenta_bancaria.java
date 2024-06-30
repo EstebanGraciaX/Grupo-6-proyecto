@@ -10,7 +10,7 @@ package Modelo;
  * @author JT
  */
 public class Cuenta_bancaria {
-    
+    private int id;
     private int n_cuenta;
     private String cliente;
     private String descripcion;

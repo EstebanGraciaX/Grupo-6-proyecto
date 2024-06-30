@@ -68,30 +68,30 @@ public final class Sistema extends javax.swing.JFrame {
         txtIdProveedor.setVisible(false);
         txtIdConfig.setVisible(false);
         txtIdCV.setVisible(false);
-        ListarConfig();
-        if (priv.getRol().equals("Asistente")) {
-            btnProductos.setEnabled(false);
-            btnProveedor.setEnabled(false);
-            LabelVendedor.setText(priv.getNombre());
-        }else{
-            LabelVendedor.setText(priv.getNombre());
-        }
-    }
-    public void ListarCliente() {
-        List<Cliente> ListarCl = client.ListarCliente();
-        modelo = (DefaultTableModel) TableCliente.getModel();
-        Object[] ob = new Object[6];
-        for (int i = 0; i < ListarCl.size(); i++) {
-            ob[0] = ListarCl.get(i).getId();
-            ob[1] = ListarCl.get(i).getDni();
-            ob[2] = ListarCl.get(i).getNombre();
-            ob[3] = ListarCl.get(i).getTelefono();
-            ob[4] = ListarCl.get(i).getDireccion();
-            modelo.addRow(ob);
-        }
-        TableCliente.setModel(modelo);
-
-    }
+//        ListarConfig();
+//        if (priv.getRol().equals("Asistente")) {
+//            btnProductos.setEnabled(false);
+//            btnProveedor.setEnabled(false);
+//            LabelVendedor.setText(priv.getNombre());
+//        }else{
+//            LabelVendedor.setText(priv.getNombre());
+//        }
+//    }
+//    public void ListarCliente() {
+//        List<Cliente> ListarCl = client.ListarCliente();
+//        modelo = (DefaultTableModel) TableCliente.getModel();
+//        Object[] ob = new Object[6];
+//        for (int i = 0; i < ListarCl.size(); i++) {
+//            ob[0] = ListarCl.get(i).getId();
+//            ob[1] = ListarCl.get(i).getDni();
+//            ob[2] = ListarCl.get(i).getNombre();
+//            ob[3] = ListarCl.get(i).getTelefono();
+//            ob[4] = ListarCl.get(i).getDireccion();
+//            modelo.addRow(ob);
+//        }
+//        TableCliente.setModel(modelo);
+//
+//    }
 
     public void ListarProveedor() {
         List<CXC> ListarPr = PrDao.ListarProveedor();
@@ -114,9 +114,9 @@ public final class Sistema extends javax.swing.JFrame {
         Object[] ob = new Object[4];
         for (int i = 0; i < Listar.size(); i++) {
             ob[0] = Listar.get(i).getId();
-            ob[1] = Listar.get(i).getNombre();
-            ob[2] = Listar.get(i).getCorreo();
-            ob[3] = Listar.get(i).getRol();
+            ob[1] = Listar.get(i).getUsuario();
+            
+            
             modelo.addRow(ob);
         }
         TableUsuarios.setModel(modelo);

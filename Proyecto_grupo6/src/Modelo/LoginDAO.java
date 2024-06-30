@@ -35,11 +35,11 @@ public class LoginDAO {
         return l;
     }
     
-    /* 
-    Registro ....
+     
+   
     public boolean Registrar(login reg){
     
-        String sql = "INSERT INTO usuarios (nombre, correo, pass, rol) VALUES (?,?,?,?)";
+        String sql = "INSERT INTO usuarios (usuario, password,) VALUES (?,?,?,?)";
         try {
             con = cn.getConnection();
             ps = con.prepareStatement(sql);
@@ -52,7 +52,7 @@ public class LoginDAO {
             return false;
         }
     }
-    */
+    
     
    
     

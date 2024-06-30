@@ -2,25 +2,34 @@
 package Modelo;
 
 public class CXC {
+    private int id;
     private int cedula;
     private String nombre;
     private String direccion;
-    
-    public CXC(){
-        
+
+    public CXC() {
     }
 
-    public CXC(int cedula, String nombre, String direccion) {
+    public CXC(int id, int cedula, String nombre, String direccion) {
+        this.id = id;
         this.cedula = cedula;
         this.nombre = nombre;
         this.direccion = direccion;
     }
 
     public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public int getCedula() {
         return cedula;
     }
 
-    public void setId(int cedula) {
+    public void setCedula(int cedula) {
         this.cedula = cedula;
     }
 
@@ -40,4 +49,8 @@ public class CXC {
         this.direccion = direccion;
     }
     
-}
+    
+    
+    }
+
+    
