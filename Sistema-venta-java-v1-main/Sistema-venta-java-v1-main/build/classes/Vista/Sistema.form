@@ -230,9 +230,9 @@
                       <Component id="btnNuevaVenta1" alignment="3" min="-2" pref="35" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="btnClientes" alignment="3" min="-2" pref="40" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
                       <Component id="btnClientes1" alignment="1" min="-2" pref="40" max="-2" attributes="0"/>
+                      <Component id="btnClientes" min="-2" pref="40" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
@@ -1546,7 +1546,7 @@
               </AuxValues>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="270" y="50" width="590" height="330"/>
+                  <AbsoluteConstraints x="270" y="50" width="580" height="330"/>
                 </Constraint>
               </Constraints>
 
@@ -1557,10 +1557,10 @@
                     <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
                       <Table columnCount="6" rowCount="0">
                         <Column editable="true" title="ID" type="java.lang.Object"/>
-                        <Column editable="true" title="CUENTA" type="java.lang.Object"/>
-                        <Column editable="true" title="DESCRIPCION" type="java.lang.Object"/>
+                        <Column editable="true" title="CODIGO" type="java.lang.Object"/>
+                        <Column editable="true" title="NOMBRE" type="java.lang.Object"/>
                         <Column editable="true" title="TIPO" type="java.lang.Object"/>
-                        <Column editable="true" title="STOCK" type="java.lang.Object"/>
+                        <Column editable="true" title="CANTIDAD" type="java.lang.Object"/>
                         <Column editable="true" title="PRECIO" type="java.lang.Object"/>
                       </Table>
                     </Property>
@@ -1618,11 +1618,11 @@
             <Container class="javax.swing.JPanel" name="jPanel11">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                  <Color blue="ff" green="cc" red="ff" type="rgb"/>
+                  <Color blue="ff" green="99" red="66" type="rgb"/>
                 </Property>
                 <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                   <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
-                    <TitledBorder title="Nuevo Producto"/>
+                    <TitledBorder title="TIPO TRANSACCION"/>
                   </Border>
                 </Property>
               </Properties>
@@ -1636,7 +1636,7 @@
                 <DimensionLayout dim="0">
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="1" attributes="0">
-                          <EmptySpace min="0" pref="1" max="32767" attributes="0"/>
+                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" attributes="0">
                                   <Component id="btnGuardarpro" min="-2" max="-2" attributes="0"/>
@@ -1742,7 +1742,7 @@
                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                       <Font name="Tahoma" size="12" style="1"/>
                     </Property>
-                    <Property name="text" type="java.lang.String" value="Cuenta"/>
+                    <Property name="text" type="java.lang.String" value="Codigo"/>
                   </Properties>
                 </Component>
                 <Component class="javax.swing.JTextField" name="txtCodigoPro">
@@ -1755,7 +1755,7 @@
                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                       <Font name="Tahoma" size="12" style="1"/>
                     </Property>
-                    <Property name="text" type="java.lang.String" value="Descripci&#xf3;n:"/>
+                    <Property name="text" type="java.lang.String" value="Nombre"/>
                   </Properties>
                 </Component>
                 <Component class="javax.swing.JTextField" name="txtDesPro">
@@ -1781,7 +1781,7 @@
                     <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                       <Font name="Tahoma" size="12" style="1"/>
                     </Property>
-                    <Property name="text" type="java.lang.String" value="Nombre"/>
+                    <Property name="text" type="java.lang.String" value="fecha"/>
                   </Properties>
                 </Component>
                 <Component class="javax.swing.JTextField" name="txtPrecioPro">
@@ -1852,6 +1852,26 @@
                   </Events>
                 </Component>
               </SubComponents>
+            </Container>
+            <Container class="javax.swing.JPanel" name="jPanel35">
+              <Constraints>
+                <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+                  <AbsoluteConstraints x="0" y="50" width="260" height="40"/>
+                </Constraint>
+              </Constraints>
+
+              <Layout>
+                <DimensionLayout dim="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <EmptySpace min="0" pref="260" max="32767" attributes="0"/>
+                  </Group>
+                </DimensionLayout>
+                <DimensionLayout dim="1">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <EmptySpace min="0" pref="40" max="32767" attributes="0"/>
+                  </Group>
+                </DimensionLayout>
+              </Layout>
             </Container>
           </SubComponents>
         </Container>
@@ -5844,7 +5864,7 @@
               </AuxValues>
               <Constraints>
                 <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                  <AbsoluteConstraints x="290" y="50" width="555" height="330"/>
+                  <AbsoluteConstraints x="290" y="50" width="480" height="330"/>
                 </Constraint>
               </Constraints>
 
@@ -5895,7 +5915,7 @@
                 </Property>
                 <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                   <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
-                    <TitledBorder title="Registro Cliente"/>
+                    <TitledBorder title="Cuenta Bancaria"/>
                   </Border>
                 </Property>
               </Properties>

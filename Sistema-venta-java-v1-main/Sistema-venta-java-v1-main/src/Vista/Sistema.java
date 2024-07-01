@@ -304,6 +304,7 @@ public final class Sistema extends javax.swing.JFrame {
         btnEditarpro = new javax.swing.JButton();
         btnEliminarPro = new javax.swing.JButton();
         btnNuevoPro = new javax.swing.JButton();
+        jPanel35 = new javax.swing.JPanel();
         jPanel6 = new javax.swing.JPanel();
         jScrollPane5 = new javax.swing.JScrollPane();
         TableVentas = new javax.swing.JTable();
@@ -823,7 +824,7 @@ public final class Sistema extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(btnConfig, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(btnProveedor, javax.swing.GroupLayout.PREFERRED_SIZE, 1, Short.MAX_VALUE)
-                    .addComponent(btnClientes, javax.swing.GroupLayout.PREFERRED_SIZE, 1, Short.MAX_VALUE)
+                    .addComponent(btnClientes, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
                     .addComponent(btnProductos, javax.swing.GroupLayout.DEFAULT_SIZE, 148, Short.MAX_VALUE)
                     .addComponent(btnNuevaVenta, javax.swing.GroupLayout.PREFERRED_SIZE, 1, Short.MAX_VALUE))
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -863,9 +864,9 @@ public final class Sistema extends javax.swing.JFrame {
                     .addComponent(btnNuevaVenta, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(btnNuevaVenta1, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnClientes, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnClientes1, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(btnClientes1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnClientes, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnProveedor, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -1388,7 +1389,7 @@ public final class Sistema extends javax.swing.JFrame {
 
             },
             new String [] {
-                "ID", "CUENTA", "DESCRIPCION", "TIPO", "STOCK", "PRECIO"
+                "ID", "CODIGO", "NOMBRE", "TIPO", "CANTIDAD", "PRECIO"
             }
         ));
         TableProducto.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -1406,14 +1407,14 @@ public final class Sistema extends javax.swing.JFrame {
             TableProducto.getColumnModel().getColumn(5).setPreferredWidth(50);
         }
 
-        jPanel5.add(jScrollPane4, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 50, 590, 330));
+        jPanel5.add(jScrollPane4, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 50, 580, 330));
         jPanel5.add(txtIdproducto, new org.netbeans.lib.awtextra.AbsoluteConstraints(223, 25, -1, -1));
 
-        jPanel11.setBackground(new java.awt.Color(255, 204, 255));
-        jPanel11.setBorder(javax.swing.BorderFactory.createTitledBorder("Nuevo Producto"));
+        jPanel11.setBackground(new java.awt.Color(102, 153, 255));
+        jPanel11.setBorder(javax.swing.BorderFactory.createTitledBorder("TIPO TRANSACCION"));
 
         jLabel22.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jLabel22.setText("Cuenta");
+        jLabel22.setText("Codigo");
 
         txtCodigoPro.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -1422,7 +1423,7 @@ public final class Sistema extends javax.swing.JFrame {
         });
 
         jLabel23.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jLabel23.setText("Descripción:");
+        jLabel23.setText("Nombre");
 
         txtDesPro.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -1440,7 +1441,7 @@ public final class Sistema extends javax.swing.JFrame {
         });
 
         jLabel25.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jLabel25.setText("Nombre");
+        jLabel25.setText("fecha");
 
         txtPrecioPro.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
@@ -1495,7 +1496,7 @@ public final class Sistema extends javax.swing.JFrame {
         jPanel11Layout.setHorizontalGroup(
             jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel11Layout.createSequentialGroup()
-                .addGap(0, 1, Short.MAX_VALUE)
+                .addGap(0, 0, Short.MAX_VALUE)
                 .addGroup(jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel11Layout.createSequentialGroup()
                         .addComponent(btnGuardarpro)
@@ -1572,6 +1573,19 @@ public final class Sistema extends javax.swing.JFrame {
         );
 
         jPanel5.add(jPanel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 50, 250, 330));
+
+        javax.swing.GroupLayout jPanel35Layout = new javax.swing.GroupLayout(jPanel35);
+        jPanel35.setLayout(jPanel35Layout);
+        jPanel35Layout.setHorizontalGroup(
+            jPanel35Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 260, Short.MAX_VALUE)
+        );
+        jPanel35Layout.setVerticalGroup(
+            jPanel35Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 40, Short.MAX_VALUE)
+        );
+
+        jPanel5.add(jPanel35, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 50, 260, 40));
 
         jTabbedPane1.addTab("4", jPanel5);
 
@@ -3453,10 +3467,10 @@ public final class Sistema extends javax.swing.JFrame {
             TableCliente7.getColumnModel().getColumn(2).setPreferredWidth(50);
         }
 
-        jPanel32.add(jScrollPane18, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 50, 555, 330));
+        jPanel32.add(jScrollPane18, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 50, 480, 330));
 
         jPanel33.setBackground(new java.awt.Color(204, 204, 255));
-        jPanel33.setBorder(javax.swing.BorderFactory.createTitledBorder("Registro Cliente"));
+        jPanel33.setBorder(javax.swing.BorderFactory.createTitledBorder("Cuenta Bancaria"));
 
         jLabel108.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel108.setText("Cuenta");
@@ -5130,7 +5144,22 @@ public final class Sistema extends javax.swing.JFrame {
     }//GEN-LAST:event_txtDniCliente7KeyTyped
 
     private void btnGuardarCliente7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGuardarCliente7ActionPerformed
-        // TODO add your handling code here:
+        if (!"".equals(txttbCliente6.getText()) || !"".equals(txtNombreCliente6.getText()) || !"".equals(txtTelefonoCliente6.getText()) || !"".equals(txtDirecionCliente.getText())) {
+            tb.setCodigo(txttbCliente6.getText());
+            tb.setNombre(txtNombre.getText());
+            tb.setTipo(txtTelefonoCliente6.getText());
+            
+           // tbDao.RegistrarCliente(tb);
+            JOptionPane.showMessageDialog(null, "Cliente Registrado");
+            LimpiarTable();
+            LimpiarCliente();
+            ListarCliente();
+            btnEditarCliente.setEnabled(false);
+            btnEliminarCliente.setEnabled(false);
+            btnGuardarCliente.setEnabled(true);
+        } else {
+            JOptionPane.showMessageDialog(null, "Los campos estan vacios");
+        }
     }//GEN-LAST:event_btnGuardarCliente7ActionPerformed
 
     private void btnEditarCliente7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEditarCliente7ActionPerformed
@@ -5566,6 +5595,7 @@ public final class Sistema extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel32;
     private javax.swing.JPanel jPanel33;
     private javax.swing.JPanel jPanel34;
+    private javax.swing.JPanel jPanel35;
     private javax.swing.JPanel jPanel4;
     private javax.swing.JPanel jPanel5;
     private javax.swing.JPanel jPanel6;
