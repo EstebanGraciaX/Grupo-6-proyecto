@@ -170,20 +170,20 @@ public final class Sistema extends javax.swing.JFrame {
 
     }
     
-    public void ListarTipoB() {
-        List<TipoB> Listartb = tbDao.ListarTipoB();
-        modelo = (DefaultTableModel) TableCliente.getModel();
-        Object[] ob = new Object[6];
-        for (int i = 0; i < ListarTb.size(); i++) {
-            ob[0] = ListarTb.get(i).getCodigo();
-            ob[1] = ListarTB.get(i).getNombre();
-            ob[2] = ListarCl.get(i).getTipo();
-            
-            modelo.addRow(ob);
-        }
-        TableTipoB.setModel(modelo);
-
-    }
+//    public void ListarTipoB() {
+//        List<TipoB> Listartb = tbDao.ListarTipoB();
+//        modelo = (DefaultTableModel) TableCliente.getModel();
+//        Object[] ob = new Object[6];
+//        for (int i = 0; i < ListarTb.size(); i++) {
+//            ob[0] = ListarTb.get(i).getCodigo();
+//            ob[1] = ListarTB.get(i).getNombre();
+//            ob[2] = ListarCl.get(i).getTipo();
+//            
+//            modelo.addRow(ob);
+//        }
+//        TableTipoB.setModel(modelo);
+//
+//    }
 
     public void LimpiarTable() {
         for (int i = 0; i < modelo.getRowCount(); i++) {
@@ -305,6 +305,7 @@ public final class Sistema extends javax.swing.JFrame {
         btnEliminarPro = new javax.swing.JButton();
         btnNuevoPro = new javax.swing.JButton();
         jPanel35 = new javax.swing.JPanel();
+        btnPdfVentas1 = new javax.swing.JButton();
         jPanel6 = new javax.swing.JPanel();
         jScrollPane5 = new javax.swing.JScrollPane();
         TableVentas = new javax.swing.JTable();
@@ -1586,6 +1587,14 @@ public final class Sistema extends javax.swing.JFrame {
         );
 
         jPanel5.add(jPanel35, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 50, 260, 40));
+
+        btnPdfVentas1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Img/pdf.png"))); // NOI18N
+        btnPdfVentas1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnPdfVentas1ActionPerformed(evt);
+            }
+        });
+        jPanel5.add(btnPdfVentas1, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 10, -1, -1));
 
         jTabbedPane1.addTab("4", jPanel5);
 
@@ -3449,7 +3458,8 @@ public final class Sistema extends javax.swing.JFrame {
 
         TableCliente7.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-
+                {"038763490", "Campos Fuertes", "Asociados S.A"},
+                {null, null, null}
             },
             new String [] {
                 "CUENTA", "NOMBRE", "DESCRIPCION"
@@ -5263,6 +5273,10 @@ public final class Sistema extends javax.swing.JFrame {
         LimpiarTable();
         ListarUsuarios();        // TODO add your handling code here:
     }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void btnPdfVentas1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPdfVentas1ActionPerformed
+        
+    }//GEN-LAST:event_btnPdfVentas1ActionPerformed
     /* Hasta aqui es de txt Articulo*/
     
     /**
@@ -5420,6 +5434,7 @@ public final class Sistema extends javax.swing.JFrame {
     private javax.swing.JButton btnNuevoProveedor;
     private javax.swing.JButton btnNuevoProveedor1;
     private javax.swing.JButton btnPdfVentas;
+    private javax.swing.JButton btnPdfVentas1;
     private javax.swing.JButton btnProductos;
     private javax.swing.JButton btnProductos1;
     private javax.swing.JButton btnProveedor;
